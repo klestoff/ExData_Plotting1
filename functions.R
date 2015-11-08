@@ -24,6 +24,7 @@ readData <- function(filename) {
         }
         close(csv)
         
+        result <- cbind(result, DT = strptime(paste(result$Date, result$Time, sep = " "), "%d/%m/%Y %X"))
         result
     } else {
         NA
