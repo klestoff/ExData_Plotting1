@@ -1,4 +1,5 @@
 source("functions.R")
+Sys.setlocale(category = "LC_TIME", locale = "en_US")
 
 data <- readData("household_power_consumption.txt")
 
